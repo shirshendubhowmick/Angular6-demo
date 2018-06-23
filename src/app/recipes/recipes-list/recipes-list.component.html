@@ -6,13 +6,7 @@
 <hr>
 <div class="row">
   <div class="col-md-12">
-    <div class="list-group clearfix" >
-      <a href="" class="list-group-item" *ngFor="let recipe of recipes">
-        <h5 class="mr-auto">{{recipe.name}}</h5>
-        <span class="mr-auto">{{recipe.description}}</span>
-        <span><img [src]="recipe.imagePath" alt="{{recipe.name}}" style="max-width: 20%;" class="float-right align-middle img-fluid"></span>
-      </a>
-    <div>
-    <app-recipe-item></app-recipe-item>
+    <div class="list-group clearfix">
+    <app-recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl"></app-recipe-item>
   </div>
 </div>
