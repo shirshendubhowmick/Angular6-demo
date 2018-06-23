@@ -4,18 +4,18 @@
       <div class="row">
         <div class="form-group col-sm-5">
           <label for="name">Name</label>
-          <input type="text" id="name" class="form-control">
+          <input type="text" id="name" class="form-control" #nameInput>
         </div>
         <div class="col-sm-2 form-group">
           <label for="amount">Amount</label>
-          <input type="number" id="amount" class="form-control">
+          <input type="number" id="amount" class="form-control" #amountInput>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group mr-2" role="group" aria-label="First group">
-              <button class="btn btn-success" type="button">Add</button>
+              <button class="btn btn-success" type="button" (click)="onAddItem()">Add</button>
             </div>
             <div class="btn-group mr-2" role="group" aria-label="Second group">
               <button class="btn btn-danger" type="button">Delete</button>
